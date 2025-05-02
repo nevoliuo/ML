@@ -9,18 +9,18 @@
   <script src="https://cdn.jsdelivr.net/npm/suncalc@1.9.0/suncalc.min.js"></script>
   <style>
     :root {
-      --space-dark: #0a0e17;
-      --neon-purple: #bc13fe;
-      --stardust: #e0d7ec;
-      --deep-space: #020617;
-      --nebula: #2e1065;
+      --space-dark: #311e1e;
+      --neon-purple: #8b6465;
+      --stardust: #ce999b;
+      --deep-space: #546581;
+      --nebula: #3fcb5b7;
     }
 
 
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #d63384;
+      background-color: #8b6465;
 
       color: var(--stardust);
       min-height: 100vh;
@@ -39,7 +39,6 @@
 
     .star {
       position: absolute;
-      background: white;
       border-radius: 50%;
       animation: twinkle var(--duration) ease-in-out infinite;
     }
@@ -70,10 +69,10 @@
       background: #1b1b24;
       padding: 2rem;
       border-radius: 1rem;
-      border: 1px solid #d63384;
+      border: 1px solid #8b6465;
       max-width: 500px;
       width: 90%;
-      box-shadow: 0 0 30px rgba(254, 19, 223, 0.2);
+      box-shadow: 0 0 30px #8b6465;
       position: relative;
       max-height: 90vh;
       overflow: hidden;
@@ -94,7 +93,7 @@
     }
 
     .close-btn:hover {
-      color:#d63384 ;
+      color:#8b6465 ;
     }
     .main-content {
       display: flex;
@@ -145,22 +144,22 @@
     }
 
     .switch-btn {
-      background: #d63384;
+      background: #8b6465;
       color: var(--stardust);
-      border: #d63384;
+      border: #8b6465;
       transition: all 0.3s ease;
       color: var(--space-dark);
       border-radius: 25px;
     }
 
     .switch-btn.active {
-      background: #d63384;
+      background: #8b6465;
       color: var(--space-dark);
     }
 
     .switch-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(214, 51, 132, 0.2);
+      box-shadow: 0 4px 8px #8b6465;
     }
 
     .charts-container {
@@ -172,8 +171,8 @@
     }
 
     .chart-wrapper {
-      background: #1b1b24;
-      border: 1px solid #d63384;
+      background: #111118;
+      border: 1px solid #8b6465;
       border-radius: 1rem;
       padding: 1rem;
       margin: 1rem 0;
@@ -197,7 +196,6 @@
     .container {
       max-width: 600px;
       margin: 20px auto;
-      background: rgba(255, 255, 255, 0.9);
       padding: 30px;
       border-radius: 24px;
       box-shadow: 0 12px 30px rgba(255, 105, 180, 0.15);
@@ -239,7 +237,7 @@
     h1 {
       font-size: 2.4em;
       text-align: center;
-      color: #d63384;
+      color: #8b6465;
       position: relative;
       z-index: 1;
       font-weight: 600;
@@ -280,7 +278,7 @@
       border-radius: 16px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
       transition: all 0.3s ease;
-      border: 1px solid #d63384;
+      border: 1px solid #8b6465;
     }
 
     .section:hover {
@@ -293,8 +291,8 @@
       font-weight: 600;
       margin-bottom: 15px;
       padding-bottom: 8px;
-      border-color: #d63384;
-      color: #d63384;
+      border-color: #8b6465;
+      color: #8b6465;
       display: flex;
       align-items: center;
     }
@@ -332,7 +330,7 @@
       padding: 10px 15px;
       border-radius: 12px;
       font-size: 1.05em;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 3px 8px #8b6465;
       display: flex;
       align-items: center;
       transition: all 0.3s ease;
@@ -345,7 +343,7 @@
 
     li:hover {
       transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 15px #8b6465;
       z-index: 10;
     }
 
@@ -372,7 +370,7 @@
       padding: 15px;
       border-radius: 16px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-      border: 1px solid #d63384;
+      border: 1px solid #8b6465;
     }
 
     .date-input-container {
@@ -385,7 +383,7 @@
       padding: 7px 20px;
       font-size: 1em;
       border-radius: 12px;
-      border: 1px solid #d63384;
+      border: 1px solid #8b6465;
       background: #26232c;
       color: #e0d7ec;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -395,13 +393,13 @@
 
     .date-input:hover {
       border-color: var(--pink-dark);
-      box-shadow: 0 4px 15px rgba(214, 51, 132, 0.1);
+      box-shadow: 0 4px 15px #8b6465;
     }
 
     .date-input:focus {
       outline: none;
       border-color: var(--pink-dark);
-      box-shadow: 0 0 0 3px rgba(214, 51, 132, 0.2);
+      box-shadow: 0 0 0 3px #8b6465;
     }
 
     .empty-state {
@@ -472,7 +470,6 @@
 /* Основной блок вывода */
 .conclusion {
   display: none; /* Скрываем блок по умолчанию */
-    background: rgba(255, 255, 255, 0.92);
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(214, 51, 132, 0.08);
@@ -499,7 +496,7 @@
 }
 
 .conclusion::-webkit-scrollbar-thumb {
-  background: #d63384;
+  background: #8b6465;
   border-radius: 3px;
 }
 
@@ -523,7 +520,7 @@
 }
 
 #analysisContent::-webkit-scrollbar-thumb {
-  background: #d63384;
+  background: #8b6465;
   border-radius: 4px;
 }
 
@@ -571,7 +568,6 @@
 
 /* Специальные блоки */
 .conclusion .general-conclusion {
-    background: rgba(255, 240, 246, 0.5);
     padding: 16px;
     border-radius: 12px;
     margin: 15px 0;
@@ -579,7 +575,6 @@
 }
 
 .conclusion .participant-info {
-    background: rgba(255, 240, 246, 0.5);
     padding: 14px;
     margin: 12px 0;
     border-radius: 10px;
@@ -591,7 +586,7 @@
 .conclusion .highlight {
     color: var(--pink-dark);
     font-weight: 600;
-    background-color: rgba(214, 51, 132, 0.5);
+    background-color: #8b6465;
     padding: 2px 6px;
     border-radius: 4px;
     display: inline-block;
@@ -633,13 +628,12 @@
     .participant-info {
       margin-top: 10px;
       padding: 10px;
-      background: #fff;
       border-radius: 5px;
       border-left: 4px solid #75c8ff;
+      background-color: #8b6465
     }
 
     .general-conclusion {
-      background: #e6f7ff;
       padding: 15px;
       border-radius: 5px;
       margin-bottom: 20px;
@@ -654,7 +648,14 @@
 
     /* Стили для графика фаз */
     .checkbox-group label {
-      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      padding-left: 32px;
+      user-select: none;
+      transition: all 0.2s ease;
+      margin-right: 15px;
     }
 
     .moon-label {
@@ -697,11 +698,11 @@
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 20px rgba(214, 51, 132, 0.08);
-  border: 1px solid #d63384;
+  border: 1px solid #8b6465;
 }
 
 .controls h3 {
-  color:#d63384;
+  color:#8b6465;
   margin: 0 0 25px 0;
   font-size: 1.1em;
   font-weight: 700;
@@ -734,26 +735,38 @@
   width: 0;
 }
 
+.checkbox-group .checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: transparent;
+  border: 2px solid #8b6465;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
 .checkbox-custom {
   position: absolute;
   top: 0;
   left: 0;
   height: 22px;
   width: 22px;
-  background-color: #d63384;
+  background-color: #8b6465;
   border: 2px solid var(--pink-medium);
   border-radius: 6px;
   transition: all 0.2s ease;
 }
 
 .checkbox-group label:hover .checkbox-custom {
-  border-color: var(--pink-dark);
+  border-color: #8b6465;
   transform: scale(1.05);
 }
 
 .checkbox-group input:checked ~ .checkbox-custom {
-  background-color: var(--pink-dark);
-  border-color: var(--pink-dark);
+  background-color: var(--girl-color);
+  border-color: var(--girl-color);
 }
 
 .checkbox-custom:after {
@@ -771,6 +784,12 @@
 
 .checkbox-group input:checked ~ .checkbox-custom:after {
   display: block;
+}
+
+.checkbox-group .participant-name {
+  color: #e0d7ec;
+  font-size: 0.95em;
+  margin-left: 8px;
 }
 
 .checkbox-group span {
@@ -828,7 +847,6 @@
   }
 }
 
-/* Добавьте эти стили в ваш CSS */
 #checkboxes {
   display: flex;
   flex-wrap: wrap;
@@ -862,9 +880,9 @@
   left: 0;
   height: 22px;
   width: 22px;
-  background-color: #d63384;
+  background-color: transparent;
   border: 2px solid var(--pink-medium);
-  border-radius: 6px;
+  border-radius: 50%;
   transition: all 0.2s ease;
   
 }
@@ -875,8 +893,8 @@
 }
 
 #checkboxes input:checked ~ .checkbox-custom {
-  background-color: var(--pink-dark);
-  border-color: var(--pink-dark);
+  background-color: var(--girl-color);
+  border-color: var(--girl-color);
 }
 
 #checkboxes .checkbox-custom:after {
@@ -901,28 +919,87 @@
   font-size: 0.95em;
   margin-left: 8px;
 }
+
+#participants-checkbox label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 32px;
+    user-select: none;
+    transition: all 0.2s ease;
+  }
+
+  #participants-checkbox .checkbox-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: transparent;
+    border: 2px solid var(--pink-medium);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+
+  #participants-checkbox label:hover .checkbox-custom {
+    border-color: var(--pink-dark);
+    transform: scale(1.05);
+  }
+
+  #participants-checkbox input:checked ~ .checkbox-custom {
+    background-color: var(--girl-color);
+    border-color: var(--girl-color);
+  }
+
+  #participants-checkbox .checkbox-custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  #participants-checkbox input:checked ~ .checkbox-custom:after {
+    display: block;
+  }
+
+  #participants-checkbox .participant-name {
+    color: #e0d7ec;
+    font-size: 0.95em;
+    margin-left: 8px;
+  }
+
 span{
-  color: #d63384;
+  color: #8b6465;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 .blood-drop-btn {
   position: absolute;
-  top: 45px;
-left: 20px;
-  background: none;
-  border: none;
-  font-size: 2.5rem; 
+  top: 60px;
+  left: 20px;
+  font-size: 1.5rem; 
   cursor: pointer;
   padding: 10px;
   transition: transform 0.3s ease;
   z-index: 1000;
+  background: #8b6465;
+  border: #8b6465;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  color: var(--stardust);
 }
 
 .blood-drop-btn:hover {
   transform: scale(1.2);
-  filter: drop-shadow(0 0 8px rgba(214, 51, 132, 0.5));
+  filter: drop-shadow(0 0 8px #8b6465);
 }
 
 
@@ -932,7 +1009,7 @@ button#switch-btn { display: block; }
 <body>
   
     <div class="main-container">
-      <button id="switch-btn" onclick="openMoonModal()" class="blood-drop-btn">🩸</button>
+      <button id="switch-btn" onclick="openMoonModal()" class="blood-drop-btn">Лунные новости</button>
   
         <h1> Анализ менструальных циклов</h1>
         
@@ -980,7 +1057,7 @@ button#switch-btn { display: block; }
           <div class="modal-content">
             <button class="close-btn" onclick="closeMoonModal()">×</button>
             <div class="date-top-right" id="today-date"></div>
-            <h1 style="color: #d63384;">🌜 Лунные новости</h1>
+            <h1 style="color: #8b6465;">🌜 Лунные новости</h1>
       
             <div class="date-input-container">
               <input type="date" class="date-input" id="date-picker">
@@ -1008,7 +1085,7 @@ button#switch-btn { display: block; }
         <div class="modal" id="analysisModal">
           <div class="modal-content" style="max-width: 800px; height: 80vh; display: flex; flex-direction: column;">
             <button class="close-btn" onclick="closeAnalysisModal()">×</button>
-            <h2 style="color: #d63384; margin-bottom: 20px;"> Детальный анализ синхронизации</h2>
+            <h2 style="color: #8b6465; margin-bottom: 20px;"> Детальный анализ синхронизации</h2>
             <div class="conclusion" id="conclusion"></div>
           </div>
         </div>
@@ -1361,7 +1438,7 @@ button#switch-btn { display: block; }
         const label = document.createElement("label");
         label.innerHTML = `
             <input type="checkbox" id="cb-${girl.name}" checked>
-            <div class="color-marker" style="background: ${girl.color}; color: ${girl.color}"></div>
+            <span class="checkbox-custom" style="--girl-color: ${girl.color}"></span>
             <span class="participant-name">${girl.name}</span>
         `;
         
@@ -1688,14 +1765,14 @@ function setupParticipantsCheckboxes() {
         const label = document.createElement('label');
         label.innerHTML = `
             <input type="checkbox" id="${participant.name}" checked>
-            <div class="color-marker" style="background: ${participant.color}; color: ${participant.color}"></div>
+            <span class="checkbox-custom" style="--girl-color: ${participant.color}"></span>
             <span class="participant-name">${participant.name}</span>
         `;
         participantsCheckbox.appendChild(label);
         label.querySelector('input').addEventListener('change', updateCorrelationChart);
     });
 }
-      
+
       document.querySelectorAll('#participants-checkbox input').forEach(checkbox => {
         checkbox.addEventListener('change', updateCorrelationChart);
       });
